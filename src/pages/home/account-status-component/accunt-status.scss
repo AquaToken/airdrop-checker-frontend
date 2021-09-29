@@ -1,0 +1,38 @@
+@import 'account-eligibility/account-eligibility';
+@import 'airdrop-status/airdrop-status';
+@import 'account-eligibility-loading/account-eligibility-loading';
+
+section.account-status {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13rem 1.6rem;
+
+    section.status-block {
+        position: relative;
+        background: #ffffff;
+        box-shadow: 0 2rem 3rem rgba(0, 6, 54, 0.06);
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 80rem;
+        //margin-top: 5.5rem;
+
+        h4 {
+            font-size: 3.5rem;
+            line-height: 4.1rem;
+            color: #23024d;
+            margin-bottom: 0.6rem;
+        }
+
+        p.description {
+            font-size: 1.4rem;
+            line-height: 180%;
+            color: #4d4f68;
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width: 800px) {
+            box-shadow: unset;
+        }
+    }
+}

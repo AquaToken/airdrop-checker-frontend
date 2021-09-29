@@ -1,0 +1,24 @@
+{
+    "extends": ["eslint:recommended", "prettier"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-unused-expressions": "off",
+        "camelcase": "off",
+        "no-unused-vars": "off",
+        "prettier/prettier": "error",
+        "require-await": "off",
+        "no-dupe-class-members": "off"
+    },
+    "ignorePatterns": ["*spec.ts", "*.d.ts", "test.ts", "polyfills.ts", "*po.ts", "*.prod.ts"],
+    "globals": {
+        "StellarSdk": true
+    }
+}
