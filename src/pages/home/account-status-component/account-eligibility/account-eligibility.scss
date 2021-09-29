@@ -1,0 +1,237 @@
+section.account-eligibility {
+    .eligibility {
+        padding: 5rem 4rem 3.5rem;
+    }
+
+    .status {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 2rem;
+        background: #fafafb;
+        border-radius: 5px;
+    }
+
+    .ident-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        background: #FFFFFF;
+        img {
+            width: 42px;
+            height: 42px;
+            image-rendering: pixelated;
+        }
+    }
+    .public-key,
+    .short-public-key {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        color: #4D4F68;
+        margin-bottom: 10px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .short-public-key {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .eligibility-status {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        height: 30px;
+        padding: 0 1.6rem 0 0.8rem;
+        background: linear-gradient(300.06deg, #3D075C -19.81%, #8620B9 141.52%);
+        border-radius: 45px;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: #FFFFFF;
+        svg {
+            margin-right: 1.1rem;
+        }
+        span {
+
+        }
+    }
+    .eligibility-status.not-eligible {
+        background: #FF3461;
+        &.hidden {
+            display: none;
+        }
+        &.hidden ~ .status-created-date {
+            margin-top: 2.7rem;
+        }
+    }
+    .status-created-date {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 1.9rem;
+        color: #000636;
+    }
+    .bonuses {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 7.2rem 4rem 7.2rem;
+    }
+
+    .bonus-card.active {
+        color: #872AB0;
+    }
+    .bonus-card {
+        padding: 20px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #E8E8ED;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        text-align: center;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .bonus-card-label {
+        font-weight: bold;
+        margin-bottom: 2.1rem;
+    }
+    .bonus-card-content {
+        color: #000636;
+    }
+    .reward {
+        padding: 3rem 4rem 2.7rem 4rem;
+        background: url('/assets/img/trash-main.svg') no-repeat center/cover, linear-gradient(300.06deg, #3D075C -19.81%, #8620B9 141.52%);
+    }
+    .reward-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+        &:first-child {
+            margin-bottom: 1rem;
+        }
+        span {
+            opacity: 0.5;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 3.5rem;
+            line-height: 4.1rem;
+        }
+        img {
+            width: 3.3rem;
+            height: 3.3rem;
+            margin-right: 0.8rem;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .eligibility {
+            padding: 5rem 0 2.5rem;
+            h4 {
+                font-size: 2.9rem;
+            }
+        }
+        .reward {
+            padding: 2.2rem 2rem 3.6rem 1.9rem;
+            border-radius: 5px;
+        }
+        .reward-line {
+            &:first-child {
+                margin-bottom: 1.4rem;
+            };
+            &:last-child {
+                margin-top: 2.4rem;
+                flex-direction: column;
+                .reward-line-label {
+                    margin-bottom: 1rem;
+                }
+            }
+            div {
+                font-size: 2.9rem;
+                line-height: 3.3rem;
+            }
+        }
+        .public-key {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .short-public-key {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        .bonus-card {
+            flex-direction: row;
+            text-align: left;
+            padding: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: auto;
+            }
+            svg {
+                margin-right: 1.4rem;
+            }
+            .bonus-card-label {
+                margin-bottom: 0;
+            }
+            .bonus-card-content {
+                font-size: 1.4rem;
+                line-height: 2.5rem;
+            }
+        }
+        .bonuses {
+            display: block;
+            padding: 0 0 3.2rem 0;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 180%;
+        color: #872AB0;
+        cursor: pointer;
+        text-decoration: none;
+        svg {
+            margin-left: 1rem;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .eligibility.error {
+        .public-key,
+        .short-public-key,
+        a { display: none; }
+
+        .ident-icon img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}

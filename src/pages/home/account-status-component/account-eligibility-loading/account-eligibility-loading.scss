@@ -1,0 +1,53 @@
+section.loading {
+    .eligibility {
+        padding: 5rem 4rem 3.5rem;
+        .status {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10rem 0;
+            border-radius: 5px;
+            background: #fafafb;
+        }
+        .spinner {
+            display: block;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+            #color {
+                stop-color: #872AB0;
+            }
+
+            circle {
+                stroke: rgba(135, 42, 176, 0.2);
+            }
+
+            #loader {
+                transform-origin: center;
+                animation: loading 1.4s infinite linear;
+            }
+
+            @keyframes loading {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .eligibility {
+            padding: 5rem 0 2.5rem;
+            h4 {
+                font-size: 2.9rem;
+            }
+        }
+    }
+}
+
+
+
+

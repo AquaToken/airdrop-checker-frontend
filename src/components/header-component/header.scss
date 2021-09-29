@@ -1,0 +1,57 @@
+header {
+    position: absolute;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11rem;
+    padding: 0 4rem;
+    left: 0;
+    top: 0;
+    z-index: 30;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    img {
+        height: 4.4rem;
+        margin-right: 1rem;
+    }
+
+
+
+    button {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #872AB0;
+        border-radius: 5px;
+        padding: 1.5rem 3.5rem 1.5rem 2.5rem;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+
+        svg {
+            margin-right: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 1070px) {
+            button {
+                padding: 1rem;
+                svg {
+                    margin: 0;
+                }
+                span {
+                    display: none;
+                }
+            }
+    }
+}

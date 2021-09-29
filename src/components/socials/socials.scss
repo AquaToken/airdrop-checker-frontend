@@ -1,0 +1,35 @@
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20rem;
+    margin-top: 2rem;
+
+    a svg path {
+        fill: #ffffff;
+        opacity: 0.3;
+    }
+
+    a:hover svg path {
+        opacity: 0.7;
+    }
+
+    .stay-in-touch {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #ffffff;
+        white-space: nowrap;
+        transform: rotate(-90deg);
+        margin-top: 8.5rem;
+        opacity: 0.3;
+
+        .line {
+            width: 6.7rem;
+            height: 1px;
+            background-color: #ffffff;
+            margin-left: 1.6rem;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.airdrop-status-container{
+    padding: 5rem 4rem;
+    .phase-block {
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+        &.muted {
+            .phase-content {
+                opacity: 0.4;
+            }
+        }
+        .phase-info,
+        .phase-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .amount,
+        .phase {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #000636;
+            margin-bottom: 0.6rem;
+        }
+
+        .date,
+        .status-wrapper {
+            margin-bottom: 0.6rem;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            color: #6B6C83;
+        }
+        .label-status {
+            display: flex;
+            align-items: center;
+            line-height: 2.5rem;
+            font-size: 1.4rem;
+            svg {
+                margin-right: 0.4rem;
+            }
+        }
+        .label-status.claimed {
+            color: #872AB0;
+        }
+        .label-status.expired {
+            color: #FF3461;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: #872AB0;
+            text-decoration: none;
+            svg {
+                margin-left: 0.5rem;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .phase-content {
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .phase-info {
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+            }
+            .phase-status {
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+            .amount {
+                font-size: 1.4rem;
+            }
+            .amount,
+            .phase {
+                line-height: 2.5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        padding: 5rem 0;
+    }
+}
+

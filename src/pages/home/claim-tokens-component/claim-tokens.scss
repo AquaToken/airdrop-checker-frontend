@@ -1,0 +1,95 @@
+section.claim-tokens {
+    display: flex;
+    justify-content: center;
+    padding: 8.2rem 0;
+    background: #24034F;
+
+    .centered-block {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        max-width: 790px;
+        margin-right: 6.1rem;
+    }
+    .links-to-platforms {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        width: 362px;
+    }
+    .links-to-platforms-items {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 1.8rem;
+        }
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0 20px 30px rgba(0, 6, 54, 0.06);
+        border-radius: 5px;
+    }
+    .item-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 1.8rem;
+        }
+        width: 100%;
+        padding: 38px 30px 38px 39px;
+        color: #23024D;
+        &:hover {
+            color: #872AB0;
+            padding: 38px 25px 38px 39px;
+        }
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 3.5rem;
+        line-height: 4.1rem;
+        color: #FFFFFF;
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        line-height: 180%;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+
+    a {
+        font-size: 1.6rem;
+        line-height: 180%;
+        color: #FFFFFF;
+
+        display: flex;
+        align-items: center;
+
+        text-decoration: none;
+        svg {
+            margin-left: 0.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+        .centered-block {
+            flex-direction: column;
+            text-align: center;
+        }
+        .info {
+            max-width: 790px;
+            margin-right: 0;
+            margin-bottom: 6.1rem;
+            align-items: center;
+        }
+        .links-to-platforms {
+            width: 100%;
+        }
+    }
+}

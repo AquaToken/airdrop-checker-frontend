@@ -1,0 +1,51 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-angularjs-annotate": "^0.9.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.26.14",
+    "del": "^3.0.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "gulp": "gulpjs/gulp",
+    "gulp-copy": "^1.1.0",
+    "gulp-hash-filename": "^1.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "json-loader": "^0.5.7",
+    "less-plugin-clean-css": "^1.5.1",
+    "path": "^0.12.7",
+    "prettier": "^1.19.1",
+    "stellar-identicon-js": "^1.0.0",
+    "through2": "^2.0.3",
+    "vinyl-named": "^1.1.0",
+    "web-animations-js": "^2.3.1",
+    "webpack-stream": "^6.1.2",
+    "yargs": "^11.0.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "./node_modules/.bin/gulp --env=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC"
+}
