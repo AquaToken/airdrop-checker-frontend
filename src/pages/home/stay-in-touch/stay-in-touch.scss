@@ -1,3 +1,7 @@
+$box-gap: 3.2rem;
+$boxes-count: 4;
+$gaps-count: $boxes-count - 1;
+$box-width: calc(25% - #{$box-gap} * #{$gaps-count} / #{$boxes-count});
 section.stay-in-touch {
     padding-top: 16rem;
     display: flex;
@@ -8,18 +12,15 @@ section.stay-in-touch {
 
     .content {
         display: flex;
+        flex-direction: column;
         width: 100%;
-    }
-
-    .texts {
-        max-width: 380px;
     }
 
     .main-title {
         font-size: 3.5rem;
         line-height: 4.1rem;
         color: #23024d;
-        margin-bottom: 3rem;
+        margin-bottom: 2.9rem;
     }
 
     .main-description {
@@ -27,7 +28,7 @@ section.stay-in-touch {
         line-height: 3rem;
         color: #000427;
         opacity: 0.7;
-        max-width: 57rem;
+        margin-bottom: 5rem;
     }
 
     a {
@@ -39,17 +40,17 @@ section.stay-in-touch {
     }
 
     .items {
-        display: flex;
+        display: grid;
+        grid-template-columns: $box-width $box-width $box-width $box-width;
+        grid-column-gap: $box-gap;
+        grid-row-gap: $box-gap;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
     .item {
         background: #fafafb;
         border-radius: 5px;
-        width: 23rem;
-        margin: 1rem;
+        width: 100%;
 
         &:hover {
             background: #ffffff;
@@ -79,23 +80,7 @@ section.stay-in-touch {
         }
     }
 
-    @media screen and (max-width: 1250px) {
-        .items {
-            display: grid;
-            grid-template-columns: 20rem 20rem 20rem;
-            grid-column-gap: 2rem;
-            grid-row-gap: 2rem;
-        }
-        .item {
-            width: 20rem;
-            margin: 0;
-            .item-content {
-                padding: 3.5rem;
-            }
-        }
-    }
-
-    @media screen and (max-width: 1070px) {
+    @media screen and (max-width: 1100px) {
         justify-content: center;
         padding-top: 6rem;
 
