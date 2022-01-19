@@ -14,7 +14,7 @@ import statusExpired from '../../pages/home/account-status-component/airdrop-sta
 
 const INVALID_ADDRESS_ERROR = 'Please enter a valid Stellar account address';
 const NOT_ELIGEBLE_ERROR = `This account has no trades before January 1, 2021, 00:00 UTC <br/>
- There’s a bigger Airdrop #2 coming soon, and you can still get free AQUA! Follow us on social media and stay tuned.`;
+ You may be eligible to get free AQUA in a bigger Airdrop #2 distribution starting soon. Head over to our social media to learn more!`;
 const ACCOUNT_ERROR_ICON =
     "data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z' fill='%23FF3461'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 12V6H12V12H10Z' fill='%23FF3461'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 16V13H12V16H10Z' fill='%23FF3461'/%3E%3C/svg%3E%0A";
 
